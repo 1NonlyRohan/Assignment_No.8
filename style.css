@@ -1,0 +1,144 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .header {
+        background-color: royalblue;
+        padding: 20px;
+    }
+
+    .header h2 {
+        color: white;
+        font-family: math;
+        margin: 0;
+        text-align: center;
+    }
+
+    .navbar ul {
+        list-style: none;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .navbar li {
+        padding: 5px 10px;
+        display: inline;
+    }
+
+    .navbar li a {
+        text-decoration: none;
+        color: white;
+        font-family: josefin sans;
+        font-size: 16px;
+    }
+
+    section {
+        margin: 20px auto;
+        padding: 20px;
+        max-width: 1200px;
+    }
+
+    h4 {
+        color: #3c3cee;
+        font-family: math;
+    }
+
+    p {
+        font-family: josefin sans;
+        color: rgb(83, 83, 83);
+        line-height: 1.6;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .footer {
+        background-color: rgb(51, 51, 51);
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .footer p {
+        color: white;
+        font-family: josefin sans;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 1024px) {
+        .header h2 {
+            text-align: center;
+        }
+
+        .navbar ul {
+            flex-wrap: wrap;
+        }
+
+        .navbar li a {
+            font-size: 14px;
+        }
+
+        section {
+            padding: 15px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .header h2 {
+            font-size: 20px;
+        }
+
+        h4 {
+            font-size: 18px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        .navbar ul {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .navbar li a {
+            padding: 10px 0;
+        }
+
+        img {
+            margin: 10px 0;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .header h2 {
+            font-size: 20px;
+        }
+
+        .navbar ul {
+            gap: 5px;
+        }
+
+        .navbar li a {
+            font-size: 18px;
+        }
+
+        h4 {
+            font-size: 18px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        .footer p {
+            font-size: 16px;
+        }
+    }
